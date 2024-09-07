@@ -4,11 +4,9 @@
     padding:0;
     box-sizing:border-box
 }
-html, body {
-  height: 100%;
-}
+
 body {
-	font-family: "Segoe UI", Arial, sans-serif;
+	font-family: "Segoe UI", Arial, sans-serif;  
 }
 @keyframes deslocaTN {
     0% {
@@ -18,8 +16,7 @@ body {
     }
     100% {
         translate:0;
-          rotate: 18deg;    
-          
+          rotate: 18deg;              
          
     }
 }
@@ -69,4 +66,9 @@ body {
     text-shadow: 5px 5px 10px  rgb(10, 6, 230);            
 }
 
+
+/*Home*/
+.fundo-tela-home{
+    height: 100%;
+}
 

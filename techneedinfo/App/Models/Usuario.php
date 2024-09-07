@@ -8,6 +8,7 @@ class Usuario extends Model{
     private $id;
     private $usuario;
     private $senha;
+    private $ativo;
 
    
     public function __get($atributo){

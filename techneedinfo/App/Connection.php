@@ -11,7 +11,7 @@ class Connection{
             $conn =new \PDO(
                 "mysql:host=localhost;dbname=tech_need_db;charset=utf8",
                 "gilmar",
-                "FELIZNATAL"    
+                "juju123"    
             ); 
             return $conn;           
         } catch (\PDOException $e) {
