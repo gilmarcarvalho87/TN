@@ -70,5 +70,20 @@ body {
 /*Home*/
 .fundo-tela-home{
     height: 100%;
+    width: 100%;
+    color: #fff;
 }
+.aside{
+  background-color: rgb(62, 69, 78);
+  height: 100%;
+}
+.icon-usuario{
+   width:50px;   
+}
+.icon-menu{
+    font-size: 4vh;
+    margin-right: 15px;
+}
+
+
 
