@@ -6,6 +6,7 @@ use MF\Model\Model;
 class Usuario extends Model{
 
     private $id;
+    private $nome;
     private $usuario;
     private $senha;
     private $ativo;
@@ -21,7 +22,7 @@ class Usuario extends Model{
     
     //verifica se usuario e senha do Front tem no BD
      public function autenticar(){
-        $query="SELECT id,usuario,senha FROM `usuarios_autenticados` WHERE usuario =:usuario AND senha =:senha";
+        $query="SELECT id,nome,usuario,senha FROM `usuarios_autenticados` WHERE usuario =:usuario AND senha =:senha";
         $stmt=$this->db->prepare($query);
         $stmt->bindValue(":usuario",$this->__get('usuario'));
         $stmt->bindValue(":senha",$this->__get('senha'));
@@ -31,6 +32,7 @@ class Usuario extends Model{
         if( !empty($usuario['id']) && !empty($usuario['usuario'])) {           
                 $this->__set("id",$usuario["id"]);   
                 $this->__set("usuario",$usuario["usuario"]);                   
+                $this->__set("nome",$usuario["nome"]);                   
         }        
         return $this;
     }

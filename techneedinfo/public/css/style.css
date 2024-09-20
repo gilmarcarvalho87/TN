@@ -1,13 +1,17 @@
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box
+*{   
+    color: #fff;
+    margin:0px;  
+    padding:0;    
 }
 
 body {
 	font-family: "Segoe UI", Arial, sans-serif;  
+    overflow-x: hidden;
+    overflow-y: hidden;
+ 
 }
+
 @keyframes deslocaTN {
     0% {
         translate:-250%;
@@ -69,28 +73,33 @@ body {
 
 /*Lateral da Home */
 .fundo-tela-home{
+   
     height: 100%;
     width: 100%;
     color: #fff;
 }
 .aside{
-  background-color: rgb(62, 69, 78);
-  height: 100%;
+    background-color: rgb(62, 69, 78);
+    height: 100%;
 }
 .icon-usuario{
-   width:50px;   
+    width:50px;   
 }
 .icon-menu{
     font-size: 4vh;
     margin-right: 15px;
 }
 
-/* Main */
-
+/* Main */  
 .caixa-mostradores{
     height:20%;
     width:20%;
     background-color: rgb(35, 57, 50);
 }  
 
-
+.tela-principal{
+    height: 74%;
+    color: #0a0101;
+    
+    
+}

@@ -19,6 +19,10 @@ class  IndexController extends Action{
             $this->render('home');
         }
         
+        public function cadastrarClientes(){
+            $this->render('cadastrarClientes');
+        }
+        
        
 }
 

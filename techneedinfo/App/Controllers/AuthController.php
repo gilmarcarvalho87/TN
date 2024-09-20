@@ -27,7 +27,8 @@ class  AuthController extends Action{
            
             session_start();
             $_SESSION['id']=$usuario->__get("id");
-            $_SESSION['nome']=$usuario->__get("usuario");
+            $_SESSION['nome']=$usuario->__get("nome");
+            $_SESSION['usuario']=$usuario->__get("usuario");
             
       
           header('Location: /home');

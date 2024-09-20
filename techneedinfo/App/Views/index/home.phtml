@@ -1,7 +1,11 @@
-<div class="row fundo-tela-home " >
+<?php
+    session_start();
+    $nome= $_SESSION['nome'];
+?>
+<div class="row fundo-tela-home  " >
 
-  <aside class="aside col-sm-2 p-3">  
-    <section id="section-aside-logo" class="p-1">
+  <aside class="aside col-sm-2">  
+    <section class="mt-3">
       <div>
         <figure class="d-flex justify-content-center">        
           <img class="icon-usuario  " src="img/iconHome.png" alt="">      
@@ -9,95 +13,96 @@
       </div>
       <hr>
       <div>
-        <figcapture class="ms-4">Nome do Usuario</p>          
+        <figcapture class="ms-4"><span class="ms-2"><?=$nome ?></span></p>          
       </div>
        <hr>   
     </section>
     
-    <section id="section-aside-menu" class="p-3">     
+    <section class="p-3">     
         <div class="btn-group dropend mb-3">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-light-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="bi bi-person-fill-add icon-menu" ></i> Cadastrar
           </button>
           <ul class="dropdown-menu">                  
-              <li><a class="dropdown-item" href="#"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
+              <li><a class="dropdown-item" href="cadastrarClientes"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
               <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open"></i>Produto</a></li>          
           </ul>          
         </div>
 
         <div class="btn-group dropend mb-2">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="bi bi-zoom-in icon-menu"></i> Pesquisar
           </button>
           <ul class="dropdown-menu">                  
               <li><a class="dropdown-item" href="#"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
               <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open"></i>Produto</a></li>          
           </ul>          
-        </div>
-
-   
-     
-                
-    
-          
-    </section>
-   
+        </div>          
+    </section>     
+ 
   </aside>
   
-  
-  <main class="col-sm ">  
-    <div class="row mb-3 bg-secondary p-2">      
-      <ul class="nav justify-content-end">
+  <main class="col-sm"> 
+    <div class="ms-1">
+
+      <section class="row mb-3 ">      
+        <ul class="nav justify-content-end">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-      </ul>
-    </div> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+      </section> 
       
-    <div class="row justify-content-evenly mb-5">      
-      <div class="caixa-mostradores rounded" name="mostrador-1" >
-        <div class="d-flex justify-content-between shadow p-2 mt-3">
-          <div><p>O.S Abertas</p></div> 
-          <div><h4 class="">10</h4></div> 
-        </div>          
-      </div>
-      <div class="caixa-mostradores rounded" name="mostrador-1" >
-        <div class="d-flex justify-content-between shadow p-2 mt-3">
-          <div><p>O.S Andamento</p></div> 
-          <div><h4 class="">2</h4></div> 
-        </div>          
-      </div>
-      <div class="caixa-mostradores rounded" name="mostrador-1" >
-        <div class="d-flex justify-content-between shadow p-2 mt-3">
-          <div><p>O.S Pendentes</p></div> 
-          <div><h4 class="">3</h4></div> 
-        </div>          
-      </div>
-      <div class="caixa-mostradores rounded" name="mostrador-1" >
-        <div class="d-flex justify-content-between shadow p-2 mt-3">
-          <div><p>O.S Concluídas</p></div> 
-          <div><h4 class="">25</h4></div> 
-        </div>          
-      </div>     
-    </div>
-   
-    <div>
-      <form class="border rounded bg-light shadow ">
-        listagem
-      </form>      
-    </div>
+      <section class="row justify-content-evenly  mb-3">      
+        <div class="caixa-mostradores rounded" name="mostrador-1" >
+          <div class="d-flex justify-content-between shadow p-2 mt-3">
+            <div><p>O.S Abertas</p></div> 
+            <div><h4 class="">10</h4></div> 
+          </div>          
+        </div>
+        <div class="caixa-mostradores rounded" name="mostrador-1" >
+          <div class="d-flex justify-content-between shadow p-2 mt-3">
+            <div><p>O.S Andamento</p></div> 
+            <div><h4 class="">2</h4></div> 
+          </div>          
+        </div>
+        <div class="caixa-mostradores rounded" name="mostrador-1" >
+          <div class="d-flex justify-content-between shadow p-2 mt-3">
+            <div><p>O.S Pendentes</p></div> 
+            <div><h4 class="">3</h4></div> 
+          </div>          
+        </div>
+        <div class="caixa-mostradores rounded" name="mostrador-1" >
+          <div class="d-flex justify-content-between shadow p-2 mt-3">
+            <div><p>O.S Concluídas</p></div> 
+            <div><h4 class="">25</h4></div> 
+          </div>          
+        </div>     
+      </section>  
+    
+      <section class="row tela-principal border  shadow ">
+        <h1>oi</h1>          
+      </section>
+      <section>       
+          <div class="d-flex justify-content-center">
+            <span class="me-1">&copy;</span><small class="text-dark"> CopyRyght - Tech Need Informática</small>
+          </div>
+        
+        </section>
+    </div> 
+
   </main> 
   
-
+ 
 </div>
 
 
