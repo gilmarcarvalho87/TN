@@ -2,106 +2,104 @@
     session_start();
     $nome= $_SESSION['nome'];
 ?>
-<div class="row fundo-tela-home  " >
-
-  <aside class="aside col-sm-2">  
-    <section class="mt-3">
-      <div>
-        <figure class="d-flex justify-content-center">        
-          <img class="icon-usuario  " src="img/iconHome.png" alt="">      
-        </figure>  
-      </div>
-      <hr>
-      <div>
-        <figcapture class="ms-4"><span class="ms-2"><?=$nome ?></span></p>          
-      </div>
-       <hr>   
-    </section>
-    
-    <section class="p-3">     
-        <div class="btn-group dropend mb-3">
-          <button type="button" class="btn btn-light-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-person-fill-add icon-menu" ></i> Cadastrar
-          </button>
-          <ul class="dropdown-menu">                  
-              <li><a class="dropdown-item" href="cadastrarClientes"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
-              <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open"></i>Produto</a></li>          
-          </ul>          
+<div class="row" id="tela-home" >
+    <aside class="aside col-sm-2" id="lateral-esquerda">  
+      <section class="mt-3">
+        <div>
+          <figure class="d-flex justify-content-center">        
+            <img class="icon-usuario  " src="img/iconHome.png" alt="">      
+          </figure>  
         </div>
-
-        <div class="btn-group dropend mb-2">
-          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="bi bi-zoom-in icon-menu"></i> Pesquisar
-          </button>
-          <ul class="dropdown-menu">                  
-              <li><a class="dropdown-item" href="#"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
-              <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open"></i>Produto</a></li>          
-          </ul>          
-        </div>          
-    </section>     
- 
-  </aside>
-  
-  <main class="col-sm "> 
-    <div class="ms-1">
-
-      <section class="row mb-3 ">      
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-      </section> 
-      
-      <section class="row justify-content-evenly  mb-3">      
-        <div class="caixa-mostradores rounded bg-primary" name="mostrador-1" >
-          <div class="d-flex justify-content-between shadow p-2 mt-3">
-            <div><p>O.S Abertas</p></div> 
-            <div><h4 class="">10</h4></div> 
-          </div>          
+        <hr>
+        <div>
+          <figcapture class="ms-4"><span class="ms-2"><?=$nome ?></span></p>          
         </div>
-        <div class="caixa-mostradores rounded bg-info" name="mostrador-1" >
-          <div class="d-flex justify-content-between shadow p-2 mt-3">
-            <div><p>O.S Executando</p></div> 
-            <div><h4 class="">2</h4></div> 
-          </div>          
-        </div>
-        <div class="caixa-mostradores rounded bg-warning" name="mostrador-1" >
-          <div class="d-flex justify-content-between shadow p-2 mt-3">
-            <div><p>O.S Aguardando </p></div> 
-            <div><h4 class="">3</h4></div> 
-          </div>          
-        </div>
-        <div class="caixa-mostradores rounded bg-success" name="mostrador-1" >
-          <div class="d-flex justify-content-between shadow p-2 mt-3">
-            <div><p>O.S Concluídas</p></div> 
-            <div><h4 class="">25</h4></div> 
-          </div>          
-        </div>     
-      </section>  
-    
-      <section class="row tela-principal border  shadow ">
-        <h1>oi</h1>          
+        <hr>   
       </section>
-      <section>       
-          <div class="d-flex justify-content-center">
-            <span class="me-1">&copy;</span><small class="text-dark"> CopyRyght - Tech Need Informática</small>
+      
+      <section class="p-3">     
+          <div class="btn-group dropend mb-3">
+            <button type="button" class="btn btn-light-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-fill-add icon-menu" ></i> Cadastrar
+            </button>
+            <ul class="dropdown-menu">                  
+                <li><a class="dropdown-item" href="cadastrarClientes"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
+                <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open"></i>Produto</a></li>          
+            </ul>          
           </div>
-        
-        </section>
-    </div> 
 
-  </main> 
+          <div class="btn-group dropend mb-2">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-zoom-in icon-menu"></i> Pesquisar
+            </button>
+            <ul class="dropdown-menu">                  
+                <li><a class="dropdown-item" href="#"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
+                <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open"></i>Produto</a></li>          
+            </ul>          
+          </div>          
+      </section>     
   
+    </aside>    
+    <main class="col-sm " id="principal" > 
+      <div class="ms-1">
+
+        <section class="row mb-3 ">      
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+        </section> 
+        
+        <section class="row justify-content-evenly  mb-3">      
+          <div class="caixa-mostradores  rounded bg-primary " id="caixa-mostrador1" name="mostrador1" >
+            <div class="d-flex justify-content-between shadow p-2 mt-3">
+              <div><p>O.S Abertas</p></div> 
+              <div><h4 class="">10</h4></div> 
+            </div>          
+          </div>
+          <div class="caixa-mostradores rounded bg-danger "  id="caixa-mostrador2"  name="mostrador2" >
+            <div class="d-flex justify-content-between shadow p-2 mt-3">
+              <div><p>O.S Executando</p></div> 
+              <div><h4 class="">2</h4></div> 
+            </div>          
+          </div>
+          <div class="caixa-mostradores rounded bg-warning "  id="caixa-mostrador3"  name="mostrador3" >
+            <div class="d-flex justify-content-between shadow p-2 mt-3">
+              <div><p>O.S Aguardando </p></div> 
+              <div><h4 class="">3</h4></div> 
+            </div>          
+          </div>
+          <div class="caixa-mostradores rounded bg-success "  id="caixa-mostrador4"  name="mostrador4" >
+            <div class="d-flex justify-content-between shadow p-2 mt-3">
+              <div><p>O.S Concluídas</p></div> 
+              <div><h4 class="">25</h4></div> 
+            </div>          
+          </div>     
+        </section>  
+      
+        <section class="row  border  shadow" id="tela-principal" >
+          <h1>oi</h1>          
+        </section>
+        <section>       
+            <div class="d-flex justify-content-center">
+              <span class="me-1">&copy;</span><small class="text-dark"> CopyRyght - Tech Need Informática</small>
+            </div>
+          
+          </section>
+      </div> 
+
+    </main> 
+    
  
 </div>
 
