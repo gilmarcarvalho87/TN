@@ -1,49 +1,51 @@
 <?php
     session_start();
     $nome= $_SESSION['nome'];
+
+
 ?>
-<div class="row" id="tela-home" >
-    <aside class="aside col-sm-2" id="lateral-esquerda">  
-      <section class="mt-3">
+<div class="row" id="home" >
+    <aside class="col-sm-2" id="lateral-esquerda">  
+      <section class="mt-3" id="area-logo">
         <div>
           <figure class="d-flex justify-content-center">        
-            <img class="icon-usuario  " src="img/iconHome.png" alt="">      
+               <img class="icon-usuario  " src="img/iconHome.png" alt="">      
           </figure>  
         </div>
         <hr>
         <div>
-          <figcapture class="ms-4"><span class="ms-2"><?=$nome ?></span></p>          
+          <figcapture class="ms-4"><span class="ms-4"><?=$nome ?></span></p>          
         </div>
         <hr>   
       </section>
       
-      <section class="p-3">     
-          <div class="btn-group dropend mb-3">
-            <button type="button" class="btn btn-light-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-person-fill-add icon-menu" ></i> Cadastrar
+      <section class="p-3" id="area-funcoes-principais" >     
+          <div class="btn-group  dropend mb-3 ms-2">
+            <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-fill-add text-info" ></i><span class="guias-laterais">Cadastrar</span> 
             </button>
             <ul class="dropdown-menu">                  
-                <li><a class="dropdown-item" href="cadastrarClientes"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
-                <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open"></i>Produto</a></li>          
+                <li><a class="dropdown-item" href="cadastrarClientes"><i class=" me-2 ms-1 fa-solid fa-user text-info"></i>Cliente</a></li>
+                <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open text-info"></i>Produto</a></li>          
             </ul>          
           </div>
 
-          <div class="btn-group dropend mb-2">
+          <div class="btn-group dropend mb-2 ms-2">
             <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-zoom-in icon-menu"></i> Pesquisar
+            <i class="bi bi-zoom-in text-info"></i><span class="guias-laterais">Pesquisar</span> 
             </button>
             <ul class="dropdown-menu">                  
-                <li><a class="dropdown-item" href="#"><i class=" me-2 ms-1 fa-solid fa-user"></i>Cliente</a></li>
-                <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open"></i>Produto</a></li>          
+                <li><a class="dropdown-item" href="#"><i class=" me-2 ms-1 fa-solid fa-user text-info"></i>Cliente</a></li>
+                <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open text-info"></i>Produto</a></li>          
             </ul>          
           </div>          
       </section>     
-  
+
     </aside>    
     <main class="col-sm " id="principal" > 
       <div class="ms-1">
 
-        <section class="row mb-3 ">      
+        <section class="row">      
           <ul class="nav justify-content-end">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -60,48 +62,61 @@
             </ul>
         </section> 
         
-        <section class="row justify-content-evenly  mb-3">      
-          <div class="caixa-mostradores  rounded bg-primary " id="caixa-mostrador1" name="mostrador1" >
-            <div class="d-flex justify-content-between shadow p-2 mt-3">
+        <section class="row justify-content-evenly  mb-2">      
+          <div class="caixa-mostradores  rounded bg-primary border shadow " id="caixa-mostrador1" name="mostrador1" >
+            <div class="d-flex justify-content-between    p-2 mt-3">
               <div><p>O.S Abertas</p></div> 
               <div><h4 class="">10</h4></div> 
             </div>          
           </div>
-          <div class="caixa-mostradores rounded bg-danger "  id="caixa-mostrador2"  name="mostrador2" >
-            <div class="d-flex justify-content-between shadow p-2 mt-3">
+          <div class="caixa-mostradores rounded bg-danger shadow"  id="caixa-mostrador2"  name="mostrador2" >
+            <div class="d-flex justify-content-between  p-2 mt-3">
               <div><p>O.S Executando</p></div> 
               <div><h4 class="">2</h4></div> 
             </div>          
           </div>
-          <div class="caixa-mostradores rounded bg-warning "  id="caixa-mostrador3"  name="mostrador3" >
-            <div class="d-flex justify-content-between shadow p-2 mt-3">
+          <div class="caixa-mostradores rounded bg-warning shadow "  id="caixa-mostrador3"  name="mostrador3" >
+            <div class="d-flex justify-content-between  p-2 mt-3">
               <div><p>O.S Aguardando </p></div> 
               <div><h4 class="">3</h4></div> 
             </div>          
           </div>
-          <div class="caixa-mostradores rounded bg-success "  id="caixa-mostrador4"  name="mostrador4" >
-            <div class="d-flex justify-content-between shadow p-2 mt-3">
+          <div class="caixa-mostradores rounded bg-success shadow"  id="caixa-mostrador4"  name="mostrador4" >
+            <div class="d-flex justify-content-between  p-2 mt-3">
               <div><p>O.S Concluídas</p></div> 
               <div><h4 class="">25</h4></div> 
             </div>          
           </div>     
         </section>  
       
-        <section class="row  border  shadow" id="tela-principal" >
-          <h1>oi</h1>          
-        </section>
-        <section>       
-            <div class="d-flex justify-content-center">
-              <span class="me-1">&copy;</span><small class="text-dark"> CopyRyght - Tech Need Informática</small>
-            </div>
+        <section class="row border border-info rounded shadow mb-1" >
+           <div id="tela-principal">
+            principal
+           </div>     
+        </section>       
+           
+        
+        <div class="d-flex justify-content-center">
+              <span class="me-1 text-dark">&copy;</span><small class="text-dark"> CopyRyght - Tech Need Informática</small>
+        </div>
           
-          </section>
+        
       </div> 
 
     </main> 
     
  
 </div>
+<script>
+  $(window).on("load", function(){
+  
+    alert("Está carregado!")
+
+});
+
+
+  
+</script>
 
 
 
