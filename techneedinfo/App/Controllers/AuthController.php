@@ -16,7 +16,7 @@ class  AuthController extends Action{
           //criamos uma instancia 
          $usuario = Container::getModel('usuario');  
 
-         //capturamos e setamos os atributos da  classe model Usuario
+         //capturamos e setamos os atributos na classe model Usuario
          $usuario->__set('usuario',$_POST['usuario']);   
          $usuario->__set('senha',$_POST['senha']);   
   
@@ -26,8 +26,7 @@ class  AuthController extends Action{
          if ($usuario->__get('id') != '' && $usuario->__get('usuario') != ''){
            
             session_start();
-            $_SESSION['id']=$usuario->__get("id");
-            $_SESSION['nome']=$usuario->__get("nome");
+            $_SESSION['id']=$usuario->__get("id");         
             $_SESSION['usuario']=$usuario->__get("usuario");
             
       
