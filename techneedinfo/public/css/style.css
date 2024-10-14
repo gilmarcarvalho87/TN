@@ -9,10 +9,9 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;  
     overflow-x: hidden;
+    font-size: smaller;
 }
-i{
-    font-size:1.5rem;
-}
+
 
 @keyframes deslocaTN {
     0% {
@@ -109,12 +108,20 @@ i{
 
 
 /*HOME - Main */  
-.mostradores{
-    box-sizing: content-box;
-  }
-#tela-principal{
-    height: 78vh;
-    color: #0a0101;
-    background-color: rgb(209, 214, 198); 
-  
+
+#main #tela-principal{
+    height: 83vh;
+    color: #0a0101;  
+    opacity: 0.2; 
+}
+#main .img-main{
+    position: absolute;
+    left: 50%;
+    top: 30%;    
+    z-index: -1;
+}
+#main .footer{
+    display: flex;
+    justify-content: center;
+    
 }
