@@ -24,7 +24,7 @@
               <i class="bi bi-person-fill-add " ></i><span class="guias-laterais">Cadastrar</span> 
             </button>
             <ul class="dropdown-menu">                  
-                <li><a class="dropdown-item" onclick="carregar('cadastrarClientes.phtml')"  href="" ><i class=" me-2 ms-1 fa-solid fa-user text-info"></i>Cliente</a></li>
+                <li><a id="cadastrarCliente" class="dropdown-item" href="" ><i class=" me-2 ms-1 fa-solid fa-user text-info"></i>Cliente</a></li>
                 <li><a class="dropdown-item" href="#"><i class=" me-2 fa-solid fa-box-open text-info"></i>Produto</a></li>          
             </ul>          
           </div>
@@ -70,12 +70,11 @@
         </section>  
       
         <section class="row" >
-          <div id="tela-principal" name="tela-principal">
-              <img class="img-main" src="/img/fundo_main.png" alt="">
+          <img class="img-main " src="/img/fundo_main.png" alt="">
+          <div id="tela-principal" >
+             <h1 id="conteudo-tela">ola</h1>
           </div>     
-        </section>       
-          
-        
+        </section>              
         <div class="footer">
               <span class="me-1 text-dark">&copy;</span><small class="text-dark"> CopyRyght - Tech Need Informática</small>
         </div>
@@ -89,13 +88,26 @@
 
 <script>
 
-  $(document).ready( () => {  
-
-   
-        $('#tela-principal').html('cadastrarClientes.html');
-     
+  let estiloDatela=document.getElementById('tela-principal').style;
+      estiloDatela.background="#ccc";
+  
+ 
+  let conteudo=document.getElementById('conteudo-tela');
+      conteudo.style.color="red";
       
-  })
+  
+  
+
+
+
+
+
+
+$(document).ready(() => {
+    $('#cadastrarCliente').on("click", () =>{
+      conteudo.textContent ="Aqui agora";
+    })     
+});
 
 
     

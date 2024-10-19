@@ -110,15 +110,18 @@ body {
 /*HOME - Main */  
 
 #main #tela-principal{
-    height: 83vh;
+    height: 84vh;
     color: #0a0101;  
-    opacity: 0.2; 
+    opacity: 1; 
+
 }
 #main .img-main{
     position: absolute;
-    left: 50%;
-    top: 30%;    
-    z-index: -1;
+    left: 45%;
+    top:  35%;    
+    z-index: -0;
+    opacity:.1;   
+    width: 20%;    
 }
 #main .footer{
     display: flex;
