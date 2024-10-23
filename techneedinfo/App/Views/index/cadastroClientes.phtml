@@ -1,0 +1,165 @@
+<?php
+
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => '{{baseUrl}}/inscricao-online/obter-dados-pessoa?dominio=sunt%20eiusmod%20laboris%20aute%20volu&cpf=sunt%20eiusmod%20laboris%20aute%20volu',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'GET',
+  CURLOPT_HTTPHEADER => array(
+    'token-auth: sunt eiusmod laboris aute volu'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+
+
+?>
+
+
+
+<div class="janelaCadastroClientes p-3 rounded">
+
+  <section>
+    <div class="d-flex justify-content-end  ">
+        <a href="/home">    
+          <button type="button" class="btn-close " aria-label="Close"></button>
+        </a>
+    </div>
+    <div class="row justify-content-between" >
+      <div class="col-md-4">
+        <H1 class="">Cadastrar Clientes</H1>
+      </div>
+      <div class="col-md-2 mt-auto mb-auto">
+           <span>Data hora</span>
+      </div>       
+    </div> 
+    
+    <form>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <label for="nomeCliente" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="nomeCliente" required>
+        </div>             
+          
+        <div class="col-md-4">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="" class="form-control" id="cpf" data-mask="000.000.000-00" min-leght="14" placeholder="000.000.000-00" required>          
+        </div>
+
+        <div class="col-md-4">
+          <label for="contato" class="form-label">Número Contato</label>
+          <input type="" class="form-control" id="contato"  >
+        </div>
+
+        
+        
+       
+      </div>
+      <div class="row mt-4">
+          <div class="col-md-3">
+          <label for="enderecoCliente" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="enderecoCliente" placeholder="Endereço de Morada">
+          </div>
+          <div class="col-md-3">
+          <label for="Complemento" class="form-label">Complemento</label>
+          <input type="text" class="form-control" id="Complemento" placeholder="Complemento">
+          </div>
+          <div class="col-md-1">
+          <label for="numero" class="form-label">N.Residência</label>
+          <input type="text" class="form-control" id="numero">
+          </div>
+          <div class="col-md-2">
+                <label for="Bairro" class="form-label">Bairro</label>
+                <select class="form-select" aria-label="Bairro">        
+                  <option value="">Varzea</option>
+                  <option value="" selected >Guarujá</option>
+                  <option value="" >Centenario</option>
+                  <option value="" >Santa Monica</option>
+                  <option value="" >Centro</option>
+                  <option value="" >Ponte Grande</option>
+                  <option value="" >Habitação</option>
+                  <option value="" >Dom Daniel</option>
+                  <option value="">Tributo</option>
+                  <option value="outros">Outros...</option>
+                </select>
+          </div>
+          <div class="col-md-2">
+              <label for="inputZip" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="inputZip">
+          </div> 
+      </div>   
+      
+      <div class="row mt-4">
+        
+            <div class="col-md-4">
+              <label for="cidade" class="form-label">Cidade</label>
+              <select class="form-select" aria-label="Default select example">        
+                <option value="Blumenau">Blumenau</option>
+                <option value="Gaspar" >Gaspar</option>
+                <option value="lages" selected>Lages</option>
+                <option value="Painel" >Painel</option>
+                <option value="Ponte_Alta" >Ponte Alta</option>
+                <option value="Urupema" >Urupema</option>
+                <option value="São_Cristovão_do_Sul" >São Cristovão do Sul</option>
+                <option value="São_Joaquim" >São Joaquim</option>
+                <option value="São_José_do_Cerrito">São José do Cerrito</option>
+                <option value="outros">Outros...</option>
+              </select>
+            </div>
+            <div class="col-md-4 ">
+              <label for="estados" class="form-label">Estado</label>    
+              <select id="estados" class="form-select ">
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC" selected>Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+          
+              
+              </select>
+            </div>
+            
+      </div>  
+    
+      <div class="col-md-12 mt-5">     
+          <button  type="submit" class="btn btn-primary btn-lg">Cadastrar</button>  
+      </div>
+    </form> 
+    
+    </div>
+  </section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

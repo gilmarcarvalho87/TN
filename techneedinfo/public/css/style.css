@@ -1,74 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0;
 
-*{      
-    margin:0px;  
-    padding:0;    
-    color: #fff;
 
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-    font-size: smaller;
+    font-size: 1.13rem;
+
 }
 
 
 @keyframes deslocaTN {
     0% {
-        translate:-250%;
+        translate: -250%;
         z-index: -1;
         rotate: 0;
     }
+
     100% {
-        translate:0;
-          rotate: 18deg;              
-         
+        translate: 0;
+        rotate: 18deg;
+
     }
 }
 
 /*Tela de Login*/
-.fundo-tela-login{
+.fundo-tela-login {
     height: 100vh;
-    background: linear-gradient(180deg,rgba(50, 158, 217, 0.582),rgb(95, 164, 164));
+    background: linear-gradient(180deg, rgba(50, 158, 217, 0.582), rgb(95, 164, 164));
 }
-.tela-login{   
+
+.tela-login {
     position: relative;
     left: 0%;
-    top:13%;
+    top: 13%;
     height: 50vh;
-    width: 50vh;  
-    padding: 5px;    
+    width: 50vh;
+    padding: 5px;
 }
-.caixa{
-    height:30vh;
-    display:flex;
+
+.caixa {
+    height: 30vh;
+    display: flex;
     justify-content: center;
 }
-.caixa-item{
-    display:column;
+
+.caixa-item {
+    display: column;
     justify-content: center;
 }
-.circulo-logo{  
-    display:flex;
+
+.circulo-logo {
+    display: flex;
     justify-content: center;
     height: 15vh;
-    width: 15vh;      
-    background-color:rgb(233, 238, 221);
-    border-radius:50%;
-    box-shadow: 5px 5px 10px 1px rgb(8, 9, 9);            
-}.img-logo{     
-    align-self: center;
-    height:10vh;    
-    width:10vh;   
+    width: 15vh;
+    background-color: rgb(233, 238, 221);
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 1px rgb(8, 9, 9);
 }
-.tn{    
-    margin: 16% 15%; 
-    align-self: center;        
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
-    font-size: 8vh;      
-    animation: deslocaTN; 
+
+.img-logo {
+    align-self: center;
+    height: 10vh;
+    width: 10vh;
+}
+
+.tn {
+    margin: 16% 15%;
+    align-self: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 8vh;
+    animation: deslocaTN;
     animation-duration: 1.2s;
-    text-shadow: 5px 5px 10px  rgb(49, 6, 168);            
+    text-shadow: 5px 5px 10px rgb(49, 6, 168);
 }
 
 
@@ -76,55 +84,69 @@ body {
 
 
 /*HOME*/
-#home{   
+#home {
     height: 100%;
-    width: 100%;    
+    width: 100%;
 }
 
 /*HOME -Lateral esquerda da Home */
-
-
-#lateral-esquerda{
-    background: url(../img/fundo_lateral.jpg);
-    height: 100%;      
-}
-#area-logo .icon-usuario{
-   width:10vh; 
-}
-#area-funcoes-principais .guias-laterais{
-    margin-left: 30px;  
-   
-}   
-#area-funcoes-principais a{
-    color: #0a0a0a;   
-}   
-#area-funcoes-principais a:hover{
-    color: #fff; 
-    background-color: rgb(46, 64, 167);
-}   
-
-
-
-
-
-/*HOME - Main */  
-
-#main #tela-principal{
-    height: 84vh;
-    color: #0a0101;  
-    opacity: 1; 
+#lateral-esquerda {
+    background: linear-gradient(45deg, #0937cf9d, #04394d);
 
 }
-#main .img-main{
+
+#area-logo .icon-usuario {
+    width: 10vh;
+}
+
+#area-funcoes-principais .guias-laterais {
+    margin-left: 30px;
+    color: #fff;
+}
+
+#area-funcoes-principais a {
+    color: #0a0a0a;
+}
+
+#area-funcoes-principais a:hover {
+    color: #fff;
+    background-color: #083c9d86;
+
+    font-size: large;
+}
+
+
+
+
+
+/*HOME - Main */
+
+#main #tela-principal {
+    height: 88vmin;
+    color: #0a0101;
+    opacity: 1;
+
+}
+
+#main .img-main {
     position: absolute;
     left: 45%;
-    top:  35%;    
-    z-index: -0;
-    opacity:.1;   
-    width: 20%;    
+    top: 35%;
+    z-index: -1;
+    opacity: 0.5;
+    width: 20%;
+
 }
-#main .footer{
+
+#main .footer {
     display: flex;
     justify-content: center;
-    
+
+}
+
+/*cadstro de  clientes*/
+.janelaCadastroClientes {
+    background: #91cce2cd;
+
+
 }

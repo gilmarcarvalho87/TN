@@ -24,10 +24,10 @@ class Route extends Bootstrap{
 			'controller' => 'indexController',
 			'action' => 'home'
 		);
-		$routes['cadastrarClientes'] = array(
-			'route' => '/cadastrarClientes',
+		$routes['cadastroClientes'] = array(
+			'route' => '/cadastroClientes',
 			'controller' => 'indexController',
-			'action' => 'cadastrarClientes'
+			'action' => 'cadastroClientes'
 		);
 		
 		$routes['sair'] = array(
