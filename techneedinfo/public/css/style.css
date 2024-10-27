@@ -1,18 +1,12 @@
 * {
     margin: 0px;
     padding: 0;
-
-
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     font-size: 1.13rem;
-
 }
-
-
 @keyframes deslocaTN {
     0% {
         translate: -250%;
@@ -32,7 +26,6 @@ body {
     height: 100vh;
     background: linear-gradient(180deg, rgba(50, 158, 217, 0.582), rgb(95, 164, 164));
 }
-
 .tela-login {
     position: relative;
     left: 0%;
@@ -41,18 +34,15 @@ body {
     width: 50vh;
     padding: 5px;
 }
-
 .caixa {
     height: 30vh;
     display: flex;
     justify-content: center;
 }
-
 .caixa-item {
     display: column;
     justify-content: center;
 }
-
 .circulo-logo {
     display: flex;
     justify-content: center;
@@ -62,13 +52,11 @@ body {
     border-radius: 50%;
     box-shadow: 5px 5px 10px 1px rgb(8, 9, 9);
 }
-
 .img-logo {
     align-self: center;
     height: 10vh;
     width: 10vh;
 }
-
 .tn {
     margin: 16% 15%;
     align-self: center;
@@ -88,34 +76,25 @@ body {
     height: 100%;
     width: 100%;
 }
-
 /*HOME -Lateral esquerda da Home */
 #lateral-esquerda {
     background: linear-gradient(45deg, #0937cf9d, #04394d);
-
 }
-
 #area-logo .icon-usuario {
     width: 10vh;
 }
-
 #area-funcoes-principais .guias-laterais {
     margin-left: 30px;
     color: #fff;
 }
-
 #area-funcoes-principais a {
     color: #0a0a0a;
 }
-
 #area-funcoes-principais a:hover {
     color: #fff;
     background-color: #083c9d86;
-
     font-size: large;
 }
-
-
 
 
 
@@ -125,9 +104,7 @@ body {
     height: 88vmin;
     color: #0a0101;
     opacity: 1;
-
 }
-
 #main .img-main {
     position: absolute;
     left: 45%;
@@ -135,18 +112,15 @@ body {
     z-index: -1;
     opacity: 0.5;
     width: 20%;
-
 }
-
 #main .footer {
     display: flex;
     justify-content: center;
-
 }
-
 /*cadstro de  clientes*/
 .janelaCadastroClientes {
-    background: #91cce2cd;
-
-
+    background: linear-gradient(rgba(5, 148, 173, 0.63),#ffffff);
+    box-shadow: 5px 5px 10px 2px #020014 ;
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
